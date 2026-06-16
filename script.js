@@ -424,7 +424,6 @@ function createCardElement(ev) {
   const card = document.createElement('div');
   card.className = `ecard ${ev.cat}`;
   card.innerHTML = `
-    <span class="ecard-priority-badge ${ev.priorityClass}">${ev.priority}</span>
     <span class="card-date-meta">${ev.dateShort} · 2026</span>
     <h2 class="card-title">${ev.shortName}</h2>
     <div class="card-info-row">
