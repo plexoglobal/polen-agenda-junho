@@ -50,25 +50,6 @@ const EVENTS = [
     tags: ['Clínico', 'Longevidade', 'Premium']
   },
   {
-    id: 3,
-    cat: 'health',
-    catLabel: 'Health & Clintech',
-    priority: 'Média/Alta',
-    priorityClass: 'media-alta',
-    name: 'Saúde e Inteligência Artificial: da inovação ao impacto real',
-    shortName: 'Saúde e IA',
-    dateLabel: '17 de Junho 2026 · 9h às 12h',
-    dateShort: '17/06',
-    startDay: 17,
-    venue: 'Inovabra Habitat, São Paulo/SP',
-    location: 'sp',
-    format: 'Presencial',
-    recorte: 'Healthtech, Inteligência Artificial, inovação, venture capital.',
-    whyInterests: 'Ideal para compor o radar de inovação em saúde, identificar healthtechs emergentes, founders, CTOs de relevância e potenciais parceiros tecnológicos. Fomenta o debate de tendências regulatórias e uso prático de IA nos diagnósticos.',
-    url: 'https://www.inovabra.com.br/inovabra/eventos',
-    tags: ['AI/IA', 'Healthtech', 'Venture Capital']
-  },
-  {
     id: 4,
     cat: 'wellness',
     catLabel: 'Wellness & Bem-estar',
