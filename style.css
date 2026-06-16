@@ -604,7 +604,7 @@ body.gate-active {
   opacity: 0.022;
   user-select: none;
   pointer-events: none;
-  letter-spacing: -0.054em;
+  letter-spacing: -0.07em;
 }
 
 .hero-eyebrow {
