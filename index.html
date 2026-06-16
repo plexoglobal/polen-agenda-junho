@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polen · Agenda Wellness, Health & Beauty — Junho 2026</title>
+  <meta name="description" content="Calendário estratégico curado de eventos de Junho de 2026 nas áreas de wellness, health, beauty e healthy food & beverages pela Polen. Descubra oportunidades de mercado e growth.">
+  
+  <link rel="icon" type="image/png" href="logo-polen.png">
+  
+
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPYSKSHB35"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VPYSKSHB35');
+  </script>
+</head>
+<body>
+
+  <!-- Accent top bar -->
+  <div class="accent-bar" id="accentBar"></div>
+
+  <!-- ─── LEAD GATE POPUP ─── -->
+  <div class="lead-gate" id="leadGate">
+    <div class="gate-card" id="gateCard">
+      <div class="gate-logo">
+        <span class="gate-logo-aura"></span>
+        <span class="gate-logo-text">polen</span>
+      </div>
+      <div class="gate-eyebrow">[ acesso exclusivo ]</div>
+      <h2 class="gate-headline">Liberar acesso à <em>agenda</em></h2>
+      <p class="gate-sub">Wellness, Health &amp; Beauty · Junho 2026</p>
+      
+      <div class="gate-divider"></div>
+      
+      <form id="gateForm" novalidate autocomplete="on">
+        <div class="gate-field">
+          <input type="text" id="gate-name" name="nome" placeholder="Nome completo" required>
+        </div>
+        
+        <div class="gate-field">
+          <input type="email" id="gate-email" name="email" placeholder="E-mail corporativo" required>
+        </div>
+        
+        <div class="gate-field">
+          <input type="text" id="gate-company" name="empresa" placeholder="Nome da empresa" required>
+        </div>
+        
+        <div class="gate-field">
+          <!-- Native hidden select for validation -->
+          <select id="gate-segment" name="segmento" style="display: none;" required>
+            <option value="" disabled selected>Segmento da empresa</option>
+            <option value="Wellness">Wellness &amp; Bem-estar</option>
+            <option value="Health">Health &amp; Clintech</option>
+            <option value="Beauty">Beauty &amp; Estética</option>
+            <option value="FoodBev">Healthy Food &amp; Beverages</option>
+            <option value="Outro">Outro</option>
+          </select>
+
+          <!-- Custom Luxury Select -->
+          <div class="custom-select-wrapper gate-select" id="gate-select-segment">
+            <div class="custom-select-trigger">Segmento da empresa</div>
+            <div class="custom-select-options">
+              <div class="custom-option" data-value="Wellness">Wellness &amp; Bem-estar</div>
+              <div class="custom-option" data-value="Health">Health &amp; Clintech</div>
+              <div class="custom-option" data-value="Beauty">Beauty &amp; Estética</div>
+              <div class="custom-option" data-value="FoodBev">Healthy Food &amp; Beverages</div>
+              <div class="custom-option" data-value="Outro">Outro</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gate-field">
+          <!-- Native hidden select for validation -->
+          <select id="gate-role" name="cargo" style="display: none;" required>
+            <option value="" disabled selected>Seu cargo</option>
+            <option value="Founder/CEO">Founder / CEO / Sócio</option>
+            <option value="C-Level/Director">C-Level / Diretor</option>
+            <option value="Manager/Head">Gerente / Head de Mkt / Growth</option>
+            <option value="Nutricionista/Medico/Tecnico">Nutricionista / Médico / Técnico</option>
+            <option value="Outro">Outro</option>
+          </select>
+
+          <!-- Custom Luxury Select -->
+          <div class="custom-select-wrapper gate-select" id="gate-select-role">
+            <div class="custom-select-trigger">Seu cargo</div>
+            <div class="custom-select-options">
+              <div class="custom-option" data-value="Founder/CEO">Founder / CEO / Sócio</div>
+              <div class="custom-option" data-value="C-Level/Director">C-Level / Diretor</div>
+              <div class="custom-option" data-value="Manager/Head">Gerente / Head de Mkt / Growth</div>
+              <div class="custom-option" data-value="Nutricionista/Medico/Tecnico">Nutricionista / Médico / Técnico</div>
+              <div class="custom-option" data-value="Outro">Outro</div>
+            </div>
+          </div>
+        </div>
+        
+        <button type="submit" class="gate-cta" id="gateCta">
+          <span class="cta-text">Acessar Agenda &rarr;</span>
+          <span class="spinner" id="gateSpinner"></span>
+        </button>
+      </form>
+      
+      <p class="gate-note">Seus dados estão protegidos.</p>
+    </div>
+  </div>
+
+  <!-- ─── HEADER ─── -->
+  <header class="site-header" id="siteHeader">
+    <div class="logo">
+      <img src="logo-polen.png" alt="Polen Logo" class="logo-img">
+      <div class="logo-text-wrapper">
+        <span class="logo-title">Polen</span>
+        <span class="logo-sub">growth operator · wellness</span>
+      </div>
+    </div>
+    
+    <div class="header-actions">
+      <a class="header-btn" id="polenWebsiteBtn" href="https://polenwellness.com" target="_blank" rel="noopener">
+        <span>Site institucional ↗</span>
+      </a>
+      <a class="header-btn ig-btn" id="instagramBtn" href="https://www.instagram.com/wellnesspolen/" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/>
+        </svg>
+        <span>@wellnesspolen</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ─── HERO SECTION ─── -->
+  <section class="hero" id="heroSection">
+    <div class="hero-bg-text" aria-hidden="true">JUNHO</div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Mapeamento Estratégico · Junho 2026</div>
+      <h1 class="hero-title">Agenda <em>Wellness</em>, Health &amp; Beauty</h1>
+      <p class="hero-subtitle">Eventos essenciais sob a ótica de <em>Growth e Inteligência de Mercado</em> para marcas de bem-estar, clean beauty e saudabilidade.</p>
+      
+      <div class="hero-stats" id="heroStats">
+        <div class="stat-card">
+          <span class="stat-number">10</span>
+          <span class="stat-label">Eventos Mapeados</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">04</span>
+          <span class="stat-label">Verticais</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Cidades / Regiões</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MAIN CONTENT ─── -->
+  <main class="main-container" id="mainContainer">
+    
+    <!-- Filters Wrap -->
+    <div class="filters-container" id="filtersContainer">
+      
+      <!-- Category Filter -->
+      <div class="filter-group">
+        <p class="filter-label">Vertical</p>
+        <div class="filter-row" id="categoryFilterRow">
+          <button class="flt-btn active" data-filter="all">Todos</button>
+          <button class="flt-btn wellness" data-filter="wellness">Wellness</button>
+          <button class="flt-btn health" data-filter="health">Health</button>
+          <button class="flt-btn beauty" data-filter="beauty">Beauty</button>
+          <button class="flt-btn foodbev" data-filter="foodbev">Food &amp; Bev</button>
+        </div>
+      </div>
+      
+      <!-- Geographic / Location Filter -->
+      <div class="filter-group">
+        <p class="filter-label">Localização</p>
+        <div class="filter-row" id="locationFilterRow">
+          <button class="flt-btn active" data-filter="all">Todas</button>
+          <button class="flt-btn" data-filter="sp">São Paulo (Estado)</button>
+          <button class="flt-btn" data-filter="outros">Outras Cidades</button>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Color Legend -->
+    <div class="legend-container" id="legendContainer">
+      <div class="legend-item"><span class="legend-dot wellness"></span> Wellness</div>
+      <div class="legend-item"><span class="legend-dot health"></span> Health</div>
+      <div class="legend-item"><span class="legend-dot beauty"></span> Beauty</div>
+      <div class="legend-item"><span class="legend-dot foodbev"></span> Food &amp; Beverages</div>
+    </div>
+
+    <!-- Event Count Indicator -->
+    <div class="grid-header" id="gridHeader">
+      <span class="grid-count" id="gridCount">Carregando eventos...</span>
+    </div>
+
+    <!-- Grid Layout -->
+    <div class="events-grid" id="eventsGrid">
+      <!-- Cards dynamically injected here -->
+    </div>
+    
+    <!-- Empty State -->
+    <div class="empty-state" id="emptyState">
+      <p class="empty-text">Nenhum evento encontrado para os filtros selecionados.</p>
+      <button class="empty-reset-btn" id="resetFiltersBtn">Limpar Filtros</button>
+    </div>
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="logo-polen.png" alt="Polen Logo" class="footer-logo-img">
+        <span class="footer-logo-text">Polen</span>
+      </div>
+      <p class="footer-desc">Acelerando marcas de clean beauty, health e self-care através de dados, inteligência estratégica e metodologia de growth proprietária.</p>
+    </div>
+    <div class="footer-right">
+      <p class="footer-copyright">&copy; 2026 Polen. Todos os direitos reservados.</p>
+      <a href="https://polenwellness.com/politica-de-privacidade.html" class="footer-link" target="_blank" rel="noopener">Política de Privacidade</a>
+    </div>
+  </footer>
+
+  <!-- ─── DETAIL BOTTOM SHEET / MODAL ─── -->
+  <div class="detail-overlay" id="detailOverlay">
+    <div class="detail-sheet" id="detailSheet">
+      <div class="sheet-header">
+        <div class="sheet-drag-handle"></div>
+        <button class="sheet-close-btn" id="sheetCloseBtn" aria-label="Fechar detalhes">&times;</button>
+      </div>
+      
+      <div class="sheet-content" id="sheetContent">
+        <!-- Details dynamically injected here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Script -->
+  <script src="script.js"></script>
+</body>
+</html>
