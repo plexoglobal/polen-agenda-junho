@@ -65,7 +65,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Healthtech, Inteligência Artificial, inovação, venture capital.',
     whyInterests: 'Ideal para compor o radar de inovação em saúde, identificar healthtechs emergentes, founders, CTOs de relevância e potenciais parceiros tecnológicos. Fomenta o debate de tendências regulatórias e uso prático de IA nos diagnósticos.',
-    url: 'https://www.listadeeventos.com.br/evento/saude-inteligencia-artificial-inovacao-impacto-real-sao-paulo?utm_source=chatgpt.com',
+    url: 'https://www.inovabra.com.br/inovabra/eventos',
     tags: ['AI/IA', 'Healthtech', 'Venture Capital']
   },
   {
