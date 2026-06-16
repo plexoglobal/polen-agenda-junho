@@ -21,6 +21,7 @@ const EVENTS = [
     shortName: 'Fispal Tecnologia',
     dateLabel: '16 a 19 de Junho 2026',
     dateShort: '16–19/06',
+    startDay: 16,
     venue: 'São Paulo Expo, São Paulo/SP',
     location: 'sp',
     format: 'Presencial',
@@ -39,6 +40,7 @@ const EVENTS = [
     shortName: 'AMWC Brazil',
     dateLabel: '17 a 19 de Junho + Cursos em 20/06',
     dateShort: '17–20/06',
+    startDay: 17,
     venue: 'Centro de Convenções Frei Caneca, São Paulo/SP',
     location: 'sp',
     format: 'Presencial',
@@ -57,6 +59,7 @@ const EVENTS = [
     shortName: 'Saúde e IA',
     dateLabel: '17 de Junho 2026 · 9h às 12h',
     dateShort: '17/06',
+    startDay: 17,
     venue: 'Inovabra Habitat, São Paulo/SP',
     location: 'sp',
     format: 'Presencial',
@@ -75,6 +78,7 @@ const EVENTS = [
     shortName: 'Wellness Day',
     dateLabel: '20 de Junho 2026',
     dateShort: '20/06',
+    startDay: 20,
     venue: 'Curitiba/PR',
     location: 'outros',
     format: 'Presencial',
@@ -93,6 +97,7 @@ const EVENTS = [
     shortName: 'Iguatemi Talks Wellness',
     dateLabel: '23 de Junho 2026',
     dateShort: '23/06',
+    startDay: 23,
     venue: 'Shopping JK Iguatemi, São Paulo/SP',
     location: 'sp',
     format: 'Presencial',
@@ -111,6 +116,7 @@ const EVENTS = [
     shortName: 'AI Summit Health',
     dateLabel: '24 e 25 de Junho 2026',
     dateShort: '24–25/06',
+    startDay: 24,
     venue: 'INRAD/HCFMUSP, São Paulo/SP (com opção de inscrição digital)',
     location: 'sp',
     format: 'Híbrido',
@@ -129,6 +135,7 @@ const EVENTS = [
     shortName: 'SP Coffee Festival',
     dateLabel: '26 a 28 de Junho 2026',
     dateShort: '26–28/06',
+    startDay: 26,
     venue: 'Bienal do Ibirapuera, São Paulo/SP',
     location: 'sp',
     format: 'Presencial',
@@ -147,6 +154,7 @@ const EVENTS = [
     shortName: 'Run to the Cup',
     dateLabel: '27 de Junho 2026',
     dateShort: '27/06',
+    startDay: 27,
     venue: 'São Paulo/SP',
     location: 'sp',
     format: 'Presencial',
@@ -165,6 +173,7 @@ const EVENTS = [
     shortName: 'Wellness Life Expo',
     dateLabel: '27 e 28 de Junho 2026',
     dateShort: '27–28/06',
+    startDay: 27,
     venue: 'Brasília/DF',
     location: 'outros',
     format: 'Presencial',
@@ -183,6 +192,7 @@ const EVENTS = [
     shortName: 'Congresso CBAC',
     dateLabel: '28 de Junho a 01 de Julho 2026',
     dateShort: '28/06–01/07',
+    startDay: 28,
     venue: 'Riocentro, Rio de Janeiro/RJ',
     location: 'outros',
     format: 'Presencial',
@@ -443,6 +453,14 @@ function renderEventsGrid() {
                      (activeLocation === 'sp' && ev.location === 'sp') ||
                      (activeLocation === 'outros' && ev.location !== 'sp');
     return matchCat && matchLoc;
+  });
+  
+  // Chronological sorting (startDay ascending, using id as stable secondary key)
+  filtered.sort((a, b) => {
+    if (a.startDay !== b.startDay) {
+      return a.startDay - b.startDay;
+    }
+    return a.id - b.id;
   });
   
   // Update count title
