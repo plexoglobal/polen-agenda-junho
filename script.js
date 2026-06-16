@@ -50,6 +50,25 @@ const EVENTS = [
     tags: ['Clínico', 'Longevidade', 'Premium']
   },
   {
+    id: 3,
+    cat: 'wellness',
+    catLabel: 'Wellness & Bem-estar',
+    priority: 'Alta',
+    priorityClass: 'alta',
+    name: 'Conexão Integral — Wellhub Brasil',
+    shortName: 'Conexão Integral',
+    dateLabel: '18 de Junho 2026 · 09h às 12h',
+    dateShort: '18/06',
+    startDay: 18,
+    venue: 'Auditório Wellhub Brasil (Berrini), São Paulo/SP',
+    location: 'sp',
+    format: 'Presencial',
+    recorte: 'Corporate wellness, neurociência, segurança psicológica, bem-estar no trabalho.',
+    whyInterests: 'Gestores de bem-estar corporativo, líderes de RH, diretores de pessoas e operadores B2B focados em saúde mental corporativa, neurociência, segurança psicológica e estratégias de inovação em ambiente de trabalho.',
+    url: 'https://lu.ma/j8jsael9',
+    tags: ['Corporate', 'Neurociência', 'B2B']
+  },
+  {
     id: 4,
     cat: 'wellness',
     catLabel: 'Wellness & Bem-estar',
