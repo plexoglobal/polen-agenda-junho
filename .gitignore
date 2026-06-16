@@ -7,3 +7,5 @@ node_modules
 .env.staging
 .DS_Store
 Thumbs.db
+
+.vercel
