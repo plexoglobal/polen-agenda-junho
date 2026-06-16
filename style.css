@@ -205,14 +205,16 @@ body.gate-active {
 }
 
 .gate-card {
-  background: rgba(26, 59, 36, 0.96);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  background: rgba(18, 41, 25, 0.72);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
   color: rgba(250, 248, 245, 0.95);
-  border-radius: 24px;
+  border-radius: 20px;
   max-width: 440px;
   width: 100%;
-  padding: 44px 36px;
+  padding: 32px 28px;
   position: relative;
   z-index: 9001;
   opacity: 0;
@@ -229,8 +231,8 @@ body.gate-active {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 26px;
-  margin-bottom: 20px;
+  padding: 6px 20px;
+  margin-bottom: 12px;
 }
 
 .gate-logo-aura {
@@ -244,7 +246,7 @@ body.gate-active {
 
 .gate-logo-text {
   font-family: var(--font-display);
-  font-size: 53px;
+  font-size: 42px;
   font-weight: 200;
   color: #ffffff;
   letter-spacing: -0.05em;
@@ -267,7 +269,7 @@ body.gate-active {
 .gate-headline {
   font-family: var(--font-display);
   font-weight: 200;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 1.15;
   letter-spacing: -0.025em;
   color: #ffffff !important;
@@ -278,21 +280,21 @@ body.gate-active {
   font-size: 14.5px;
   color: rgba(250, 248, 245, 0.7);
   line-height: 1.4;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 
 .gate-divider {
   height: 1px;
   width: 100%;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 #gateForm {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 .gate-field {
@@ -302,7 +304,7 @@ body.gate-active {
 
 .gate-field input {
   width: 100%;
-  padding: 14px 18px;
+  padding: 11px 16px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: rgba(26, 59, 36, 0.4);
@@ -331,7 +333,7 @@ body.gate-active {
 
 .custom-select-wrapper.gate-select .custom-select-trigger {
   width: 100%;
-  padding: 14px 18px;
+  padding: 11px 16px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: rgba(26, 59, 36, 0.4);
@@ -426,12 +428,12 @@ body.gate-active {
 
 .gate-cta {
   width: 100%;
-  margin-top: 12px;
+  margin-top: 4px;
   background: var(--sage-primary);
   color: #1a3b24;
   border: none;
   border-radius: 12px;
-  padding: 16px 24px;
+  padding: 12px 20px;
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 14px;
