@@ -26,7 +26,7 @@ const EVENTS = [
     location: 'sp',
     format: 'Presencial',
     recorte: 'Food & beverages, indústria, tecnologia, embalagem, processamento.',
-    whyInterests: 'Excelente oportunidade para mapear marcas de alimentos/bebidas inovadoras, ingredientes funcionais, operações logísticas e inovações industriais de ponta. A Fispal se consolida como o maior evento de tecnologia para a indústria de alimentos e bebidas da América do Sul.',
+    whyInterests: 'Profissionais de P&D (Pesquisa e Desenvolvimento), fundadores e gestores de marcas de alimentos e bebidas saudáveis, e executivos em busca de inovações em ingredientes funcionais, embalagens sustentáveis e automação industrial para o setor de saudabilidade.',
     url: 'https://www.fispaltecnologia.com.br/en/',
     tags: ['Indústria', 'Ingredientes', 'B2B']
   },
@@ -45,7 +45,7 @@ const EVENTS = [
     location: 'sp',
     format: 'Presencial',
     recorte: 'Beauty, estética médica, dermatologia, longevidade, anti-aging.',
-    whyInterests: 'Canal estratégico fortíssimo para o mapeamento de marcas de beauty/wellness premium, clínicas de estética avançada e medical beauty. O congresso é referência absoluta em medicina estética na América Latina, reunindo mais de 250 speakers internacionais.',
+    whyInterests: 'Médicos dermatologistas, gestores de clínicas de estética, fundadores de marcas de clinical/clean beauty, e investidores focados em longevidade, estética avançada e tendências globais de medical beauty.',
     url: 'https://www.amwcbrazil.com.br/',
     tags: ['Clínico', 'Longevidade', 'Premium']
   },
@@ -64,7 +64,7 @@ const EVENTS = [
     location: 'outros',
     format: 'Presencial',
     recorte: 'Wellness, bem-estar integral, presença ativa, movimento corporal.',
-    whyInterests: 'Embora tenha um viés mais B2C/experiencial, é relevante para entender novas linguagens de mercado, dinâmicas de experiência de comunidade e ativações sensoriais focadas em autocuidado.',
+    whyInterests: 'Empreendedores de wellness, profissionais de marketing e branding interessados em experiências de consumo imersivas, ativação de comunidades ativas e tendências de estilo de vida saudável e autocuidado.',
     url: 'https://www.even3.com.br/para-germinar-cuidar-wellness-day-740576/?utm_source=chatgpt.com',
     tags: ['Comunidade', 'Experiencial', 'B2C']
   },
@@ -83,7 +83,7 @@ const EVENTS = [
     location: 'sp',
     format: 'Presencial',
     recorte: 'Wellness, longevidade, nutrição funcional, beleza limpa, saúde mental.',
-    whyInterests: 'O evento mais alinhado à interseção de premium wellness, marcas influentes e novos comportamentos de consumo. A programação aborda medicina preventiva, performance, lifestyle premium, inovação e bem-estar corporativo.',
+    whyInterests: 'Fundadores e executivos de marcas de luxo/premium no setor de bem-estar, profissionais de marketing focados em novos comportamentos de consumo de alta renda, nutricionistas, médicos integrativos e gestores de programas de bem-estar corporativo.',
     url: 'https://iguatemi.com.br/iguatemitalks/wellness',
     tags: ['Premium', 'Lifestyle', 'Nutrição']
   },
@@ -102,7 +102,7 @@ const EVENTS = [
     location: 'sp',
     format: 'Híbrido',
     recorte: 'Healthtech, IA, inovação clínica, regulação e tecnologia emergente.',
-    whyInterests: 'Essencial para capturar as narrativas e tendências reais de Inteligência Artificial aplicada a hospitais, automação de diagnóstico, captação de dados de pacientes, regulação clínica e ecossistema de startups de saúde.',
+    whyInterests: 'Lideranças e fundadores de healthtechs, diretores de tecnologia e inovação em hospitais, médicos focados em IA clínica, reguladores setoriais, e investidores de venture capital em busca de startups de saúde em estágio inicial.',
     url: 'https://aisummit.ia.br/',
     tags: ['AI/IA', 'Hospitais', 'Inovação']
   },
@@ -121,7 +121,7 @@ const EVENTS = [
     location: 'sp',
     format: 'Presencial',
     recorte: 'Bebidas funcionais, café especial, gastronomia, marcas D2C.',
-    whyInterests: 'Valioso para mapear marcas de healthy beverages, rituais modernos de consumo, engajamento de comunidades premium e ativações sensoriais. O festival reúne microtorrefações inovadoras, tendências em cafés especiais e novos entrantes no setor de alimentação e bebidas.',
+    whyInterests: 'Empreendedores de alimentos e bebidas, baristas, entusiastas e produtores de café especial, e profissionais de branding interessados em rituais modernos de consumo, engajamento de comunidade e ativações sensoriais premium.',
     url: 'https://www.saopaulocoffeefestival.com.br/?utm_source=chatgpt.com',
     tags: ['Bebidas', 'Gastronomia', 'Comunidade']
   },
@@ -140,7 +140,7 @@ const EVENTS = [
     location: 'sp',
     format: 'Presencial',
     recorte: 'Wellness, recovery, brunch saudável, creators, marketing de comunidade.',
-    whyInterests: 'Mais voltado ao lifestyle e ativação de comunidade do que uma feira de negócios tradicional, porém altamente relevante para compreender o wellness como experiência de conexão social e branded community.',
+    whyInterests: 'Creators, marcas de activewear e recovery, produtores de conteúdo e profissionais de marketing digital focados em branded communities, lifestyle saudável e tendências de conexões sociais ligadas ao esporte.',
     url: 'https://beta.sympla.com.br/evento/run-to-the-cup/3444806?utm_source=chatgpt.com',
     tags: ['Corrida', 'Recovery', 'Lifestyle']
   },
@@ -159,7 +159,7 @@ const EVENTS = [
     location: 'outros',
     format: 'Presencial',
     recorte: 'Wellness, feira de bem-estar, workshops, aulas ao vivo.',
-    whyInterests: 'Importante radar de marcas e tendências fora do eixo São Paulo. Apresenta um viés focado em B2C e comunidade de praticantes locais no Distrito Federal, gerando insights de abrangência nacional.',
+    whyInterests: 'Lojistas, distribuidores, profissionais de saúde e bem-estar locais do Centro-Oeste, e marcas nacionais que buscam expandir sua atuação e testar produtos junto ao público consumidor de Brasília e região.',
     url: 'https://beta.sympla.com.br/evento/wellness-life-expo-2026-brasilia-df/3457720?utm_source=chatgpt.com',
     tags: ['Feira', 'Workshops', 'Regional']
   },
@@ -178,7 +178,7 @@ const EVENTS = [
     location: 'outros',
     format: 'Presencial',
     recorte: 'Saúde diagnóstica, laboratórios clínicos, biomarcadores, Health 5.0.',
-    whyInterests: 'Embora mais técnico e industrial, é estratégico para mapear tendências de healthtech, biotecnologia diagnóstica, biomarcadores de saúde integrativa e novas tecnologias laboratoriais. O tema central é focado na Era da Saúde 5.0.',
+    whyInterests: 'Patologistas clínicos, biomédicos, gestores de laboratórios de análises clínicas, fornecedores de insumos médicos e startups focadas em biotecnologia, medicina diagnóstica de precisão e tendências de Health 5.0.',
     url: 'https://www.sbac.org.br/cbac/?utm_source=chatgpt.com',
     tags: ['Congresso', 'Diagnóstico', 'Clintech']
   }
@@ -531,7 +531,7 @@ function openDetailsModal(ev) {
       </div>
       
       <div class="details-block">
-        <div class="details-block-label">${icoTrend} Por que interessa para a Polen</div>
+        <div class="details-block-label">${icoTrend} Pra quem é interessante</div>
         <p class="details-block-text">${ev.whyInterests}</p>
       </div>
     </div>
