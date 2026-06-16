@@ -508,7 +508,7 @@ body.gate-active {
 }
 
 .logo-img {
-  height: 36px;
+  height: 72px;
   width: auto;
   object-fit: contain;
 }
@@ -1107,7 +1107,7 @@ body.gate-active {
 }
 
 .footer-logo-img {
-  height: 28px;
+  height: 56px;
   width: auto;
 }
 
