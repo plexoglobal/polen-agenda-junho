@@ -660,6 +660,7 @@ async function handleGateSubmit(e) {
     const globalLeadsPayload = {
       name: name,
       email: email,
+      whatsapp: whatsapp,
       interest: `Agenda Julho 2026 | Empresa: ${company} | Segmento: ${segment} | Cargo: ${role} | WhatsApp: ${whatsapp} | ${originString}`,
       created_at: new Date().toISOString()
     };
