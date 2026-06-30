@@ -415,6 +415,7 @@ const EVENTS = [
 // Active State Variables
 let activeCategory = 'all';
 let activeLocation = 'all';
+let currentStep = 1;
 
 // DOM Elements
 const elements = {
@@ -569,67 +570,104 @@ async function checkEmailInBase(email) {
 async function handleGateSubmit(e) {
   e.preventDefault();
   
-  const email = elements.gateEmail.value.trim();
-  const name = document.getElementById('gate-name').value.trim();
-  const company = document.getElementById('gate-company').value.trim();
-  const segment = document.getElementById('gate-segment').value;
-  const role = document.getElementById('gate-role').value;
-  
-  if (!name || !email || !email.includes('@') || !company || !segment || !role) {
-    alert('Por favor, preencha todos os campos obrigatórios para liberar o seu acesso.');
-    return;
-  }
-  
-  elements.gateCta.classList.add('loading');
-  
-  const traffic = getTrafficSource();
-  const originString = `Origem: ${traffic.source}` + 
-    (traffic.utm_source ? `, utm_source: ${traffic.utm_source}` : '') +
-    (traffic.utm_medium ? `, utm_medium: ${traffic.utm_medium}` : '') +
-    (traffic.utm_campaign ? `, utm_campaign: ${traffic.utm_campaign}` : '') +
-    (traffic.referrer ? `, ref: ${traffic.referrer}` : '');
-  
-  try {
-    const exists = await checkEmailInBase(email);
+  if (currentStep === 1) {
+    const email = elements.gateEmail.value.trim();
+    if (!email || !email.includes('@')) {
+      alert('Por favor, insira um e-mail corporativo válido.');
+      return;
+    }
     
-    if (exists) {
-      console.log('[Polen Lead Capture] Existing user detected. Bypassing Supabase write.');
+    elements.gateCta.classList.add('loading');
+    
+    try {
+      const exists = await checkEmailInBase(email);
       
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'generate_lead', {
-          event_category: 'lead_capture',
-          event_label: 'Agenda de Eventos Julho 2026 - Retorno',
-          company_name: company,
-          business_segment: segment,
-          job_role: role,
-          traffic_source: traffic.source,
-          utm_source: traffic.utm_source,
-          utm_medium: traffic.utm_medium,
-          utm_campaign: traffic.utm_campaign,
-          referrer: traffic.referrer
-        });
+      if (exists) {
+        console.log('[Polen Lead Capture] Existing user detected. Bypassing Supabase write.');
+        
+        const traffic = getTrafficSource();
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', {
+            event_category: 'lead_capture',
+            event_label: 'Agenda de Eventos Julho 2026 - Retorno',
+            company_name: 'Existing User',
+            business_segment: 'Existing User',
+            job_role: 'Existing User',
+            traffic_source: traffic.source,
+            utm_source: traffic.utm_source,
+            utm_medium: traffic.utm_medium,
+            utm_campaign: traffic.utm_campaign,
+            referrer: traffic.referrer
+          });
+        }
+        
+        unlockAndDismiss();
+      } else {
+        // New user: go to Step 2
+        elements.gateCta.classList.remove('loading');
+        currentStep = 2;
+        
+        // Lock email input
+        elements.gateEmail.setAttribute('readonly', 'true');
+        elements.gateEmail.style.opacity = '0.7';
+        
+        // Expand step 2 fields
+        const step2 = document.getElementById('gate-step-2');
+        if (step2) step2.classList.add('active');
+        
+        // Change button label
+        elements.gateCta.querySelector('.cta-text').textContent = 'Concluir Cadastro →';
       }
-    } else {
-      const agendaPayload = {
-        nome: name,
-        email: email,
-        whatsapp: '',
-        source: `Agenda Julho 2026 | ${originString}`,
-        created_at: new Date().toISOString()
-      };
-      
-      const globalLeadsPayload = {
-        name: name,
-        email: email,
-        interest: `Agenda Julho 2026 | Empresa: ${company} | Segmento: ${segment} | Cargo: ${role} | ${originString}`,
-        created_at: new Date().toISOString()
-      };
-      
+    } catch (err) {
+      console.error('Error during email check:', err);
+      // Fallback: if check fails, go to step 2 anyway to not lock out users
+      elements.gateCta.classList.remove('loading');
+      currentStep = 2;
+      const step2 = document.getElementById('gate-step-2');
+      if (step2) step2.classList.add('active');
+      elements.gateCta.querySelector('.cta-text').textContent = 'Concluir Cadastro →';
+    }
+  } else if (currentStep === 2) {
+    const email = elements.gateEmail.value.trim();
+    const name = document.getElementById('gate-name').value.trim();
+    const company = document.getElementById('gate-company').value.trim();
+    const segment = document.getElementById('gate-segment').value;
+    const role = document.getElementById('gate-role').value;
+    
+    if (!name || !company || !segment || !role) {
+      alert('Por favor, preencha todos os campos para liberar o seu acesso.');
+      return;
+    }
+    
+    elements.gateCta.classList.add('loading');
+    
+    const traffic = getTrafficSource();
+    const originString = `Origem: ${traffic.source}` + 
+      (traffic.utm_source ? `, utm_source: ${traffic.utm_source}` : '') +
+      (traffic.utm_medium ? `, utm_medium: ${traffic.utm_medium}` : '') +
+      (traffic.utm_campaign ? `, utm_campaign: ${traffic.utm_campaign}` : '') +
+      (traffic.referrer ? `, ref: ${traffic.referrer}` : '');
+    
+    const agendaPayload = {
+      nome: name,
+      email: email,
+      whatsapp: '',
+      source: `Agenda Julho 2026 | ${originString}`,
+      created_at: new Date().toISOString()
+    };
+    
+    const globalLeadsPayload = {
+      name: name,
+      email: email,
+      interest: `Agenda Julho 2026 | Empresa: ${company} | Segmento: ${segment} | Cargo: ${role} | ${originString}`,
+      created_at: new Date().toISOString()
+    };
+    
+    try {
       const results = await Promise.allSettled([
         postToSupabase('leads_agenda_sp_2026', agendaPayload),
         postToSupabase('leads', globalLeadsPayload)
       ]);
-      
       console.log('[Polen Lead Capture] Save complete. Results:', results);
       
       if (typeof window.gtag === 'function') {
@@ -646,20 +684,24 @@ async function handleGateSubmit(e) {
           referrer: traffic.referrer
         });
       }
+    } catch (err) {
+      console.error('Error saving new lead:', err);
+    } finally {
+      unlockAndDismiss();
     }
-  } catch (err) {
-    console.error('Error during database checking or saving:', err);
-  } finally {
-    localStorage.setItem(CONFIG.storageKey, 'true');
-    
-    elements.leadGate.classList.add('dismissed');
-    document.body.classList.remove('gate-active');
-    
-    setTimeout(() => {
-      elements.leadGate.style.display = 'none';
-      elements.gateCta.classList.remove('loading');
-    }, 500);
   }
+}
+
+function unlockAndDismiss() {
+  localStorage.setItem(CONFIG.storageKey, 'true');
+  
+  elements.leadGate.classList.add('dismissed');
+  document.body.classList.remove('gate-active');
+  
+  setTimeout(() => {
+    elements.leadGate.style.display = 'none';
+    elements.gateCta.classList.remove('loading');
+  }, 500);
 }
 
 // ─── FILTER AND GRID RENDERING ───
