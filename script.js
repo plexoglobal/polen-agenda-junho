@@ -630,11 +630,12 @@ async function handleGateSubmit(e) {
   } else if (currentStep === 2) {
     const email = elements.gateEmail.value.trim();
     const name = document.getElementById('gate-name').value.trim();
+    const whatsapp = document.getElementById('gate-whatsapp').value.trim();
     const company = document.getElementById('gate-company').value.trim();
     const segment = document.getElementById('gate-segment').value;
     const role = document.getElementById('gate-role').value;
     
-    if (!name || !company || !segment || !role) {
+    if (!name || !whatsapp || !company || !segment || !role) {
       alert('Por favor, preencha todos os campos para liberar o seu acesso.');
       return;
     }
@@ -651,7 +652,7 @@ async function handleGateSubmit(e) {
     const agendaPayload = {
       nome: name,
       email: email,
-      whatsapp: '',
+      whatsapp: whatsapp,
       source: `Agenda Julho 2026 | ${originString}`,
       created_at: new Date().toISOString()
     };
@@ -659,7 +660,7 @@ async function handleGateSubmit(e) {
     const globalLeadsPayload = {
       name: name,
       email: email,
-      interest: `Agenda Julho 2026 | Empresa: ${company} | Segmento: ${segment} | Cargo: ${role} | ${originString}`,
+      interest: `Agenda Julho 2026 | Empresa: ${company} | Segmento: ${segment} | Cargo: ${role} | WhatsApp: ${whatsapp} | ${originString}`,
       created_at: new Date().toISOString()
     };
     
