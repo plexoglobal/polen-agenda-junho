@@ -27,7 +27,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Ingredientes, alimentos, bebidas, suplementos, health ingredients, natural ingredients.',
     whyInterests: 'Um dos eventos mais fortes do mês para healthy food & beverages. A FiSA se posiciona como plataforma de ingredientes para indústrias de alimentos e bebidas, com frente de health, natural ingredients e pet food. Também lançou o Circuito Health & Wellness, sinal direto de que saudabilidade virou eixo estratégico de inovação alimentar.',
-    url: '#',
+    url: 'https://www.fi-events.com.br/',
     tags: ['Ingredientes', 'B2B', 'Inovação']
   },
   {
@@ -46,7 +46,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Wellness, longevidade, saúde preventiva, beleza, performance, lifestyle.',
     whyInterests: 'Provavelmente o evento mais “wellness economy” do mês. Posicionamento de festival de wellness e possibilidade de ativações de marca, conteúdo e experiência.',
-    url: '#',
+    url: 'https://www.aurorafestival.com.br/',
     tags: ['Festival', 'Lifestyle', 'Premium']
   },
   {
@@ -65,7 +65,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Fitness, health, negócios, academias, nutrição esportiva, marcas do setor.',
     whyInterests: 'Muito relevante para mapear fitness como ecossistema de negócios: academias, suplementos, equipamentos, tecnologia, cursos, gestão e marcas. Combina feira, congresso, cursos e networking.',
-    url: '#',
+    url: 'https://fitnessbrasil.com.br/',
     tags: ['Fitness', 'Negócios', 'Ecossistema']
   },
   {
@@ -84,7 +84,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Nutrição, saúde pública, bem-estar, expo, corrida, marcas.',
     whyInterests: 'Forte para nutrição, saúde pública, marcas, prescritores e produtos. Posiciona-se como “maior congresso de nutrição do Brasil”; inclui exposição aberta e corrida com 1.500 participantes.',
-    url: '#',
+    url: 'https://nutricaobrasil.com.br/',
     tags: ['Congresso', 'Marcas', 'Corrida']
   },
   {
@@ -103,7 +103,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Healthtech, saúde digital, interoperabilidade, IA, gestores hospitalares.',
     whyInterests: 'Muito bom para healthtech, dados, interoperabilidade e inovação no setor de saúde.',
-    url: '#',
+    url: 'https://tiinside.com.br/',
     tags: ['Healthtech', 'Dados', 'Inovação']
   },
   {
@@ -122,7 +122,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Liderança em saúde, hospitais, operadoras, laboratórios, inovação.',
     whyInterests: 'Menos feira aberta e mais encontro executivo. Relevante para alta liderança em saúde, gestão, IA, força de trabalho, experiência do colaborador e operação.',
-    url: '#',
+    url: 'https://forum.saudebusiness.com/',
     tags: ['Liderança', 'Hospitais', 'Gestão']
   },
   {
@@ -141,7 +141,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Saúde, hospitais, fornecedores, gestão, hotelaria hospitalar, nutrição hospitalar.',
     whyInterests: 'Forte para ecossistema hospitalar e decisores de saúde. Ponto de encontro estratégico para negócios, inovação e parcerias no setor.',
-    url: '#',
+    url: 'https://expohospitalbrasil.com.br/',
     tags: ['Hospitais', 'B2B', 'Nutrição']
   },
   {
@@ -160,7 +160,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Medicina do estilo de vida, longevidade, nutrição, movimento, sono, saúde mental, suplementação.',
     whyInterests: 'Evento bem alinhado ao território da Polen. A proposta combina experiências, expositores e palestras com curadoria em medicina do estilo de vida, neurociência, saúde hormonal e NR1.',
-    url: '#',
+    url: 'https://www.sympla.com.br/',
     tags: ['Experiência', 'Longevidade', 'Lifestyle']
   },
   {
@@ -179,7 +179,7 @@ const EVENTS = [
     format: 'Híbrido',
     recorte: 'Saúde da mulher, nutrição materno-infantil, alta performance.',
     whyInterests: 'Bom para nutrição, saúde da mulher e performance. Congresso de saúde da mulher, nutrição materno-infantil e alta performance.',
-    url: '#',
+    url: 'https://iafconference.com.br/',
     tags: ['Saúde da Mulher', 'Nutrição', 'Performance']
   },
   {
@@ -198,7 +198,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Saúde integrativa, práticas complementares, cuidado integral.',
     whyInterests: 'Relevante para wellness mais clínico/integrativo. Foco em ciência, prática clínica e cuidado integral.',
-    url: '#',
+    url: 'https://www.cimsi.com.br/',
     tags: ['Integrativa', 'Clínico', 'Ciência']
   },
   {
@@ -236,7 +236,7 @@ const EVENTS = [
     format: 'Híbrido',
     recorte: 'Suplementação, obesidade, emagrecimento, nutrição esportiva.',
     whyInterests: 'Já passou, mas vale para pós-evento e conteúdo. Posicionado como “maior evento para nutricionistas do Brasil”.',
-    url: '#',
+    url: 'https://science.vitafor.com.br/',
     tags: ['Nutrição', 'Suplementos', 'Conteúdo']
   },
   {
@@ -255,7 +255,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Estética, saúde, beleza e bem-estar.',
     whyInterests: 'Também já passou, mas é muito relevante para pós-evento. Feira/congresso reúne estética e beleza com mais de 180 marcas.',
-    url: '#',
+    url: 'http://congressoestetica.com.br/',
     tags: ['Beleza', 'Estética', 'Marcas']
   },
   {
@@ -274,7 +274,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Alimentação saudável, práticas sustentáveis, evento comunitário.',
     whyInterests: 'Evento comunitário com palestras sobre alimentação saudável. Bom para observar wellness público/comunitário.',
-    url: '#',
+    url: 'https://www.google.com/search?q=Festival+ABC+Andando+de+Bem+com+a+Vida+2026',
     tags: ['Comunidade', 'Sustentabilidade']
   },
   {
@@ -293,7 +293,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Bioeconomia, sistemas agroalimentares, inovação climática, negócios.',
     whyInterests: 'Não é wellness direto, mas cruza bioeconomia e sistemas agroalimentares. Adjacente para healthy food, ingredientes e sustentabilidade.',
-    url: '#',
+    url: 'https://www.google.com/search?q=Brazil+Climate+Solutions+Cubo+Itaú+2026',
     tags: ['Clima', 'Sustentabilidade', 'Agro']
   },
   {
@@ -312,7 +312,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Food service, IA, dados, creators, marketing, comportamento.',
     whyInterests: 'Bom para food service, IA, dados, marketing e alimentação como experiência digital.',
-    url: '#',
+    url: 'https://www.google.com/search?q=FIAP+Meetup+Food+Service+4.0+2026',
     tags: ['Food Service', 'IA', 'Digital']
   },
   {
@@ -331,7 +331,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Suplementos, nutrição, bem-estar profissional.',
     whyInterests: 'Evento pequeno com marca relevante do setor de suplementos/nutrição. Boa pista para relacionamento e ativação regional.',
-    url: '#',
+    url: 'https://www.google.com/search?q=Wellness+Day+Vitafor+2026',
     tags: ['Nutrição', 'Regional']
   },
   {
@@ -350,7 +350,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Nutrição, inovação, mercado.',
     whyInterests: 'Evento de nutrição regional, referência no calendário de congressos de nutrição. Interessante para mapear influência fora do eixo SP.',
-    url: '#',
+    url: 'https://www.google.com/search?q=Meeting+de+Nutrição+Farmellis+2026',
     tags: ['Nutrição', 'Congresso', 'Regional']
   },
   {
@@ -369,7 +369,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Arquitetura hospitalar, experiência do paciente, operação.',
     whyInterests: 'Muito bom para a tese de espaço como infraestrutura de saúde: arquitetura hospitalar, ambientes de cuidado e wellness real estate.',
-    url: '#',
+    url: 'https://abdeh.org.br/',
     tags: ['Hospitalar', 'Real Estate']
   },
   {
@@ -388,7 +388,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Tecnologia em saúde, inovação.',
     whyInterests: 'Convergência entre inovação e tecnologia no setor brasileiro. Bom para healthtech e educação em saúde.',
-    url: '#',
+    url: 'https://www.google.com/search?q=TecSaúde+Brasil+2026',
     tags: ['Healthtech', 'Inovação', 'Educação']
   },
   {
@@ -407,7 +407,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Nutrição clínica, hospitalar, profissionais de saúde.',
     whyInterests: 'Evento técnico para profissionais de saúde, útil para nutrição clínica/hospitalar e relacionamento com especialistas.',
-    url: '#',
+    url: 'https://www.google.com/search?q=Simpósio+de+Nutrição+Hospitalar+Hospital+Nove+de+Julho+2026',
     tags: ['Nutrição', 'Clínica', 'Técnico']
   },
   {
@@ -426,7 +426,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Saúde, bem-estar, gastronomia.',
     whyInterests: 'Pista qualificada no ecossistema de saúde e bem-estar. Requer validação individual antes de uso comercial mais agressivo.',
-    url: '#',
+    url: 'https://www.google.com/search?q=SouBio+Experience+2026',
     tags: ['Gastronomia', 'Experiência']
   },
   {
@@ -445,7 +445,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Yoga, respiração, meditação, autoconhecimento.',
     whyInterests: 'Menor prioridade B2B, mas bom para observar wellness experiencial e retiros imersivos.',
-    url: '#',
+    url: 'https://www.google.com/search?q=Retiro+de+Yoga+e+Autoconhecimento+Romã+Ashram+2026',
     tags: ['Yoga', 'Retiro', 'Imersão']
   },
   {
@@ -464,7 +464,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'HealthTechs, DeepTechs, IA, SaaS, marketing.',
     whyInterests: 'Tem trilhas de HealthTechs e IA. Relevante para mapear healthtechs, investidores e startups de consumer health.',
-    url: '#',
+    url: 'https://startupsummit.com.br/',
     tags: ['Startups', 'Healthtech', 'Investimento']
   },
   {
@@ -483,7 +483,7 @@ const EVENTS = [
     format: 'Online',
     recorte: 'Hospitais, operadoras, farmacêuticas, biomarcadores.',
     whyInterests: 'Programação inclui casos envolvendo hospitais, healthtechs e saúde mental. Relevante para cases de inovação aberta em saúde.',
-    url: '#',
+    url: 'https://100os.net/',
     tags: ['Inovação Aberta', 'Online']
   },
   {
@@ -502,7 +502,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Saúde mental, instituições de saúde, prevenção, cuidado.',
     whyInterests: 'Relevante para saúde mental, instituições de saúde e conteúdo de prevenção/cuidado.',
-    url: '#',
+    url: 'https://www.google.com/search?q=II+Simpósio+de+Saúde+Mental+do+HCor+2026',
     tags: ['Saúde Mental', 'Hospitalar']
   },
   {
@@ -521,7 +521,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Saúde mental, psicologia, profissionais e clínicas.',
     whyInterests: 'Pode ser útil para saúde mental, psicologia, profissionais e clínicas.',
-    url: '#',
+    url: 'https://www.google.com/search?q=PsiDay+2026',
     tags: ['Psicologia', 'Saúde Mental']
   },
   {
@@ -540,7 +540,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Evento regional de nutrição, serviços locais de saúde.',
     whyInterests: 'Evento regional de nutrição; relevante para capilaridade e marcas locais de saúde.',
-    url: '#',
+    url: 'https://www.google.com/search?q=Feira+da+Nutrição+Unimed+Tubarão+2026',
     tags: ['Nutrição', 'Regional']
   }
 ];
@@ -978,11 +978,9 @@ function openDetailsModal(ev) {
     </div>
     
     <div class="details-footer">
-      ${(ev.url && ev.url !== '#') ? `
       <a href="${ev.url}" target="_blank" rel="noopener" class="details-cta">
         <span>Acessar site do evento ↗</span>
       </a>
-      ` : ''}
       <span class="details-brand-label">curadoria estratégica</span>
     </div>
   `;
