@@ -274,7 +274,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Alimentação saudável, práticas sustentáveis, evento comunitário.',
     whyInterests: 'Evento comunitário com palestras sobre alimentação saudável. Bom para observar wellness público/comunitário.',
-    url: 'https://www.google.com/search?q=Festival+ABC+Andando+de+Bem+com+a+Vida+2026',
+    url: 'https://www.sympla.com.br/eventos?s=Festival+ABC',
     tags: ['Comunidade', 'Sustentabilidade']
   },
   {
@@ -293,7 +293,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Bioeconomia, sistemas agroalimentares, inovação climática, negócios.',
     whyInterests: 'Não é wellness direto, mas cruza bioeconomia e sistemas agroalimentares. Adjacente para healthy food, ingredientes e sustentabilidade.',
-    url: 'https://www.google.com/search?q=Brazil+Climate+Solutions+Cubo+Itaú+2026',
+    url: 'https://brazilclimatesolutions.com/',
     tags: ['Clima', 'Sustentabilidade', 'Agro']
   },
   {
@@ -312,7 +312,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Food service, IA, dados, creators, marketing, comportamento.',
     whyInterests: 'Bom para food service, IA, dados, marketing e alimentação como experiência digital.',
-    url: 'https://www.google.com/search?q=FIAP+Meetup+Food+Service+4.0+2026',
+    url: 'https://www.meetup.com/',
     tags: ['Food Service', 'IA', 'Digital']
   },
   {
@@ -331,7 +331,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Suplementos, nutrição, bem-estar profissional.',
     whyInterests: 'Evento pequeno com marca relevante do setor de suplementos/nutrição. Boa pista para relacionamento e ativação regional.',
-    url: 'https://www.google.com/search?q=Wellness+Day+Vitafor+2026',
+    url: 'https://www.sympla.com.br/eventos?s=Wellness+Day+Vitafor',
     tags: ['Nutrição', 'Regional']
   },
   {
@@ -350,7 +350,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Nutrição, inovação, mercado.',
     whyInterests: 'Evento de nutrição regional, referência no calendário de congressos de nutrição. Interessante para mapear influência fora do eixo SP.',
-    url: 'https://www.google.com/search?q=Meeting+de+Nutrição+Farmellis+2026',
+    url: 'https://www.meetingfarmellis.com.br/',
     tags: ['Nutrição', 'Congresso', 'Regional']
   },
   {
@@ -388,7 +388,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Tecnologia em saúde, inovação.',
     whyInterests: 'Convergência entre inovação e tecnologia no setor brasileiro. Bom para healthtech e educação em saúde.',
-    url: 'https://www.google.com/search?q=TecSaúde+Brasil+2026',
+    url: 'https://www.unoeste.br/',
     tags: ['Healthtech', 'Inovação', 'Educação']
   },
   {
@@ -407,7 +407,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Nutrição clínica, hospitalar, profissionais de saúde.',
     whyInterests: 'Evento técnico para profissionais de saúde, útil para nutrição clínica/hospitalar e relacionamento com especialistas.',
-    url: 'https://www.google.com/search?q=Simpósio+de+Nutrição+Hospitalar+Hospital+Nove+de+Julho+2026',
+    url: 'https://www.sympla.com.br/eventos?s=Simp%C3%B3sio+Nutri%C3%A7%C3%A3o+Hospital+Nove+de+Julho',
     tags: ['Nutrição', 'Clínica', 'Técnico']
   },
   {
@@ -426,7 +426,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Saúde, bem-estar, gastronomia.',
     whyInterests: 'Pista qualificada no ecossistema de saúde e bem-estar. Requer validação individual antes de uso comercial mais agressivo.',
-    url: 'https://www.google.com/search?q=SouBio+Experience+2026',
+    url: 'https://soubioexperience.com.br',
     tags: ['Gastronomia', 'Experiência']
   },
   {
@@ -445,7 +445,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Yoga, respiração, meditação, autoconhecimento.',
     whyInterests: 'Menor prioridade B2B, mas bom para observar wellness experiencial e retiros imersivos.',
-    url: 'https://www.google.com/search?q=Retiro+de+Yoga+e+Autoconhecimento+Romã+Ashram+2026',
+    url: 'https://romashram.com.br/',
     tags: ['Yoga', 'Retiro', 'Imersão']
   },
   {
@@ -502,7 +502,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Saúde mental, instituições de saúde, prevenção, cuidado.',
     whyInterests: 'Relevante para saúde mental, instituições de saúde e conteúdo de prevenção/cuidado.',
-    url: 'https://www.google.com/search?q=II+Simpósio+de+Saúde+Mental+do+HCor+2026',
+    url: 'https://www.sympla.com.br/eventos?s=Simp%C3%B3sio+de+Sa%C3%BAde+Mental+HCor',
     tags: ['Saúde Mental', 'Hospitalar']
   },
   {
@@ -521,7 +521,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Saúde mental, psicologia, profissionais e clínicas.',
     whyInterests: 'Pode ser útil para saúde mental, psicologia, profissionais e clínicas.',
-    url: 'https://www.google.com/search?q=PsiDay+2026',
+    url: 'https://www.sympla.com.br/eventos?s=PsiDay+Vittude',
     tags: ['Psicologia', 'Saúde Mental']
   },
   {
@@ -540,7 +540,7 @@ const EVENTS = [
     format: 'Presencial',
     recorte: 'Evento regional de nutrição, serviços locais de saúde.',
     whyInterests: 'Evento regional de nutrição; relevante para capilaridade e marcas locais de saúde.',
-    url: 'https://www.google.com/search?q=Feira+da+Nutrição+Unimed+Tubarão+2026',
+    url: 'https://www.unimed.coop.br/site/web/tubarao',
     tags: ['Nutrição', 'Regional']
   }
 ];
