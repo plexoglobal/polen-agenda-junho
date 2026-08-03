@@ -978,9 +978,11 @@ function openDetailsModal(ev) {
     </div>
     
     <div class="details-footer">
+      ${(ev.url && ev.url !== '#') ? `
       <a href="${ev.url}" target="_blank" rel="noopener" class="details-cta">
         <span>Acessar site do evento ↗</span>
       </a>
+      ` : ''}
       <span class="details-brand-label">curadoria estratégica</span>
     </div>
   `;
